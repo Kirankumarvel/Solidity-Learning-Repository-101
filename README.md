@@ -12,8 +12,8 @@ This repository contains practice examples and projects related to Solidity smar
 ## Getting Started
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Kirankumarvel/Solidity-Practice-Examples.git
-   cd Solidity-Practice-Examples
+   https://github.com/Kirankumarvel/Solidity-Learning-Repository-101.git
+   cd Solidity-Learning-Repository-101
    ```
 
 2. **Install Dependencies**: Ensure you have Node.js and Truffle installed.
