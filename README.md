@@ -174,4 +174,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 Feel free to submit issues or pull requests for improvements and additional examples.
 ```
 
-Please review and let me know if you need any changes.
