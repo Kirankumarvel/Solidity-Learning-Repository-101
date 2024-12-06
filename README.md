@@ -1,6 +1,5 @@
 
 
-```markdown
 # Solidity Practice Repository 101
 
 ## Overview
