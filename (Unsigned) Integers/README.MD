@@ -5,7 +5,7 @@
 This repository contains practice examples and projects related to Solidity smart contract development on the Ethereum blockchain. It aims to enhance understanding of key concepts and practical applications.
 
 ## Contents
-- **ExampleBoolean.sol**: A simple smart contract demonstrating boolean state management.
+- **ExampleUnit.sol**: A simple smart contract demonstrating boolean state management.
 - **Other Examples**: Additional contracts showcasing various Solidity features and best practices.
 
 ## Getting Started
