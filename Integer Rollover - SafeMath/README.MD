@@ -1,5 +1,5 @@
 
-#Integer Rollover - SafeMath
+##Integer Rollover - SafeMath
 
 In earlier versions of Solidity (before version 0.8.0), arithmetic operations such as addition, subtraction, multiplication, and division would wrap around in case of an overflow or underflow. This behavior was problematic because it could lead to unintended results, especially in financial applications where accurate calculations are critical. To handle this issue, developers commonly used the SafeMath library to add safety checks to these operations.
 
