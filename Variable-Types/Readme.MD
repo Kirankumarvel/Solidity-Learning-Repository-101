@@ -34,6 +34,82 @@
 
 ---
 
+
+Here's a table summarizing the **key Solidity variable types** with small examples for each:
+
+| **Type**              | **Description**                                  | **Example**                              | **Default Value**   |
+|-----------------------|--------------------------------------------------|------------------------------------------|---------------------|
+| **`bool`**            | Boolean type (`true` or `false`).                | `bool isActive = true;`                  | `false`             |
+| **`int`**             | Signed integer (positive & negative numbers).    | `int balance = -100;`                    | `0`                 |
+| **`uint`**            | Unsigned integer (only positive numbers).        | `uint age = 25;`                         | `0`                 |
+| **`uint8` to `uint256`** | Unsigned integers with different bit sizes.   | `uint8 smallNum = 255;`                  | `0`                 |
+| **`address`**         | Ethereum address (20 bytes).                     | `address owner = 0x123...789;`           | `0x000...000`       |
+| **`address payable`** | Address that can send/receive Ether.             | `address payable wallet;`                | `0x000...000`       |
+| **`string`**          | Textual data (dynamic length).                   | `string name = "Alice";`                 | `""` (empty)        |
+| **`bytes`**           | Arbitrary-length byte array.                     | `bytes data = "hello";`                  | `0x` (empty)        |
+| **`bytes32`**         | Fixed-length byte array (32 bytes).              | `bytes32 id = "abc";`                    | `0x0...0`           |
+| **`mapping`**         | Key-value pair storage.                          | `mapping(address => uint) balances;`     | -                   |
+| **`enum`**            | Custom set of named constants.                   | `enum Status {Pending, Shipped}`         | First value         |
+| **`struct`**          | Custom data type (grouping variables).           | `struct Person {string name; uint age;}` | -                   |
+| **`array`**           | Collection of elements.                          | `uint[] numbers = [1, 2, 3];`            | Empty array         |
+
+---
+
+### 🔹 **Detailed Examples**
+
+1. **Boolean Example**  
+   ```solidity
+   bool isAvailable = false;
+   ```
+
+2. **Integer Example**  
+   ```solidity
+   int temperature = -20;
+   ```
+
+3. **Unsigned Integer Example**  
+   ```solidity
+   uint balance = 1000;
+   ```
+
+4. **Address Example**  
+   ```solidity
+   address owner = 0xAbC123456789DEF0123456789abcdef123456789;
+   ```
+
+5. **String Example**  
+   ```solidity
+   string greeting = "Hello, Solidity!";
+   ```
+
+6. **Mapping Example**  
+   ```solidity
+   mapping(address => uint) public balances;
+   ```
+
+7. **Enum Example**  
+   ```solidity
+   enum State { Active, Inactive, Suspended }
+   ```
+
+8. **Struct Example**  
+   ```solidity
+   struct User {
+       string name;
+       uint age;
+   }
+   ```
+
+9. **Array Example**  
+   ```solidity
+   uint[] scores = [10, 20, 30];
+   ```
+
+This table and examples provide a quick reference for Solidity types and their default values.
+
+---
+
+
 ## 🌐 **Real-World Example**: Token Contract
 
 Let’s tie these concepts together with a **simplified ERC-20 token contract**.
