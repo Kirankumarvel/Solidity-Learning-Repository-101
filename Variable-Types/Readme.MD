@@ -188,3 +188,26 @@ contract SimpleToken {
 ---
 
 This example demonstrates the essential Solidity concepts covered, giving a practical understanding of how variables and types are used in smart contracts.
+
+It seems that I'm unable to retrieve the `README.md` file from the `Variable-Types` directory. You can manually add the following formatted content to your `README.md`:
+
+---
+
+Here’s a structured table summarizing the key takeaways for Solidity variable types:
+
+| **Variable Type**           | **Description**                                                                                     | **Default Value**                                   |
+|-----------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| **Boolean (`bool`)**        | Represents `true` or `false`.                                                                       | `false`                                            |
+| **Integer Types (`int`, `uint`)** | - `int`: Signed integers (positive or negative).<br>- `uint`: Unsigned integers (only positive).<br>- Sizes range from `8 bits` to `256 bits` (e.g., `uint8`, `uint256`). | `0`                                               |
+| **Address Types**           | - `address`: Stores a 20-byte Ethereum address.<br>- `address payable`: Can send and receive Ether. | `0x0000000000000000000000000000000000000000`     |
+| **String and Byte Arrays**  | - `string`: For text data (dynamic length).<br>- `bytes`: For arbitrary-length byte arrays.<br>- `bytes32`: Fixed-length (32 bytes) byte array. | N/A                                                |
+| **Mappings**                | Key-value storage structure (`mapping(keyType => valueType)`). Cannot iterate through mappings.   | Depends on the type of value being mapped.        |
+| **Enums**                   | Defines a set of named constants, useful for representing finite states (e.g., `Pending`, `Shipped`). | N/A                                                |
+| **Structs**                 | Custom data types to group related variables, useful for creating complex data structures.          | N/A                                                |
+| **Arrays**                  | Can be fixed or dynamic in size. Default value for dynamic arrays is an empty array.               | Empty array for dynamic arrays.                    |
+| **Default Values**          | Variables are automatically initialized with default values: <br> - Boolean: `false` <br> - Integer: `0` <br> - String: `""` <br> - Address: `0x0000000000000000000000000000000000000000` | See above                                          |
+| **Gas Optimization**        | Minimize the use of strings and large data types to save gas. Use smallest possible bit size for uint types (e.g., `uint8`). | N/A                                                |
+| **Static Typing**           | Solidity is statically typed; types must be explicitly declared.                                    | N/A                                                |
+| **Blockchain Constraints**  | Limited resources (memory and gas). Efficient coding practices are essential for cost-effective smart contracts. | N/A                                                |
+
+This table provides a clear and concise overview of the key variable types in Solidity, their characteristics, and important considerations when using them in smart contracts.
